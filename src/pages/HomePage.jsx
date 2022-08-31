@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import Categories from '../components/home/Categories'
+import Collection from '../components/home/Collection'
 import FeatureProducts from '../components/home/FeatureProducts'
 
  class HomePage extends Component {
@@ -7,6 +8,7 @@ import FeatureProducts from '../components/home/FeatureProducts'
     return (
       <Fragment>
         <FeatureProducts />
+        <Collection />
         <Categories />
       </Fragment>
     )
