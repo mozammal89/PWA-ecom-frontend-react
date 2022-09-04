@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { Routes, Route, Link } from "react-router-dom";
+import ContactPage from '../pages/ContactPage';
 import HomePage from '../pages/HomePage';
 import UserLoginPage from '../pages/UserLoginPage';
 
@@ -10,6 +11,7 @@ import UserLoginPage from '../pages/UserLoginPage';
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<UserLoginPage />} />
+          <Route path="/contact" element={<ContactPage />} />
           {/* <Route exact path="/login" component={UserLoginPage} /> */}
         </Routes>
         {/* UserLoginPage */}
