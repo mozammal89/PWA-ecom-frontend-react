@@ -8,6 +8,9 @@
 @import "nevMenuDesktop.css";
 @import "nevMenuMobile.css";
 @import "typo.css";
+@import "megaMenuMobile.css";
+@import "responsive.css";
+@import "megaMenuAll.css";
 
 
 body{
