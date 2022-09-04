@@ -6,7 +6,7 @@ class FeatureProducts extends Component {
   render() {
     return (
       <Fragment>
-        <Container className="text-center" fluid={true}>
+        <Container fluid={true} className="text-center" fluid={true}>
           <div className="section-title text-center mb-55"><h2>FEATURED PRODUCT</h2>
             <p>Some Of Our Exclusive Collection, You May Like</p>
           </div>
