@@ -1,15 +1,15 @@
+
 import React, { Component, Fragment } from 'react'
 import FooterDesktop from '../components/common/FooterDesktop'
 import FooterMobile from '../components/common/FooterMobile'
 import NavMenuDesktop from '../components/common/NavMenuDesktop'
 import NavMenuMobile from '../components/common/NavMenuMobile'
-import UserLogin from '../components/common/UserLogin'
+import Privacy from '../components/others/Privacy'
 
-
-class UserLoginPage extends Component {
-    componentDidMount(){
-        window.scroll(0,0)
-   }
+class PrivacyPage extends Component {
+     componentDidMount(){
+          window.scroll(0,0)
+     }
      render() {
           return (
                <Fragment> 
@@ -21,7 +21,7 @@ class UserLoginPage extends Component {
                <NavMenuMobile />  
                </div>                       
 
-               <UserLogin /> 
+               <Privacy /> 
 
                <div className="Desktop">
                <FooterDesktop/>
@@ -36,4 +36,4 @@ class UserLoginPage extends Component {
      }
 }
 
-export default UserLoginPage
+export default PrivacyPage
