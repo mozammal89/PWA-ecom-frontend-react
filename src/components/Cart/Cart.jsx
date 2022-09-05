@@ -1,5 +1,6 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React, { Component, Fragment } from 'react'
-import { Navbar, Container, Row, Col, Button, Card } from 'react-bootstrap';
+import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 import Product1 from '../../assets/images/product/product1.png'
 
 class Cart extends Component {
@@ -128,7 +129,6 @@ class Cart extends Component {
                     <Card>
                         <Card.Body>
                             <Row>
-
 
                                 <Col md={4} lg={4} sm={6} xs={6}>
 
