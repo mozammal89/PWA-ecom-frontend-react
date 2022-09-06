@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { Routes, Route, Link } from "react-router-dom";
+import AboutPage from '../pages/AboutPage';
 import CartPage from '../pages/CartPage';
 import ContactPage from '../pages/ContactPage';
 import FavouritePage from '../pages/FavouritePage';
@@ -20,6 +21,7 @@ import UserLoginPage from '../pages/UserLoginPage';
           <Route path="/login" element={<UserLoginPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/purchase" element={<PurchasePage />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
           <Route path="/refund" element={<RefundPage />} />
           <Route path="/productdetails" element={<ProductDetailsPage />} />
