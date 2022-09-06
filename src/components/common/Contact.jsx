@@ -4,6 +4,8 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap'
 import validation from '../../validation/validation';
 import axios from 'axios';
 import AppURL from '../../api/AppURL';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export class Contact extends Component {
     constructor() {
@@ -43,16 +45,16 @@ export class Contact extends Component {
 
         
         if(name.length == 0){
-            alert('please write name');
+            toast.error('please write name');
         }
         else if(email.length == 0){
-            alert('please write email');
+            toast.error('please write email');
         }
         else if(message.length == 0){
-            alert('please write something');
+            toast.error('please write something');
         }
         else if(!(validation.NameRegex).test(name)){
-            alert("invalid name");
+            toast.error("invalid name");
         }else{
             sendBtn.innerHTML="Sending...";
             let MyFormData = new FormData();
@@ -64,13 +66,13 @@ export class Contact extends Component {
             axios.post(AppURL.PostContact,MyFormData )
               .then(function (response) {
                 if(response.status==200){
-                    alert("message sent Successfully");
+                    toast.success("message sent Successfully");
                     sendBtn.innerHTML="Send";
                     contactForm.reset();
                 }
               })
               .catch(function (error) {
-                alert("Error");
+                toast.error("Error");
                 sendBtn.innerHTML="Send";
               });
         }
@@ -113,6 +115,7 @@ export class Contact extends Component {
                         </Col>
                     </Row>
                 </Container>
+                <ToastContainer />
             </Fragment>
         )
     }
